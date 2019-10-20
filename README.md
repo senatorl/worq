@@ -10,6 +10,10 @@
 
 ### 🏠 [Homepage](https://www.webaddicts.pl)
 
+## Download distributions
+
+Distributions for Windows and Mac are available [here](https://drive.google.com/open?id=1xjvEVFNNiq7rScbbtWG1DRrebjCtsJpS).
+
 ## Install
 
 ```sh
@@ -21,6 +25,13 @@ yarn install
 ```sh
 yarn electron:serve
 ```
+
+## Build
+
+```sh
+yarn electron:build
+```
+
 
 ## Author
 
