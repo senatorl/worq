@@ -1,5 +1,6 @@
+<p align="center">
 <img src="https://i.imgur.com/v738JI9.jpg"/>
-
+</p>
 <h1 align="center">Welcome to worq 👋</h1>
 <p>
   <a href="https://opensource.org/licenses/MIT" target="_blank">
@@ -7,9 +8,9 @@
   </a>
 </p>
 > :   Home for all your commonly used webapps
-
+<p align="center">
 <img src="https://i.imgur.com/2HsigoE.jpg"/>
-
+</p>
 ### 🏠 [Homepage](https://www.webaddicts.pl)
 
 ## Download
