@@ -1,3 +1,5 @@
+<img src="https://i.imgur.com/v738JI9.jpg"/>
+
 <h1 align="center">Welcome to worq 👋</h1>
 <p>
   <a href="https://opensource.org/licenses/MIT" target="_blank">
