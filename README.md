@@ -10,9 +10,9 @@
 
 ### 🏠 [Homepage](https://www.webaddicts.pl)
 
-## Download distributions
+## Download
 
-Distributions for Windows and Mac are available [here](https://drive.google.com/open?id=1xjvEVFNNiq7rScbbtWG1DRrebjCtsJpS).
+Distributions for Windows, Mac and Linux are available [here](https://github.com/senatorl/worq/releases).
 
 ## Install
 
