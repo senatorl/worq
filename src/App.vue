@@ -14,11 +14,17 @@
                     <v-icon color="white">minimize</v-icon>
                 </v-btn>
                     <v-btn text icon  v-on:click="maximize()">
-                    <v-icon color="white">fullscreen</v-icon>
+                    <v-icon color="white">crop_square</v-icon>
                 </v-btn>
                 <CloseAppModal></CloseAppModal>
         </v-app-bar>
         <v-content flex>
+            <div v-if="!data.length" class="no-webviews-wrapper">
+                <div>
+                    <h1 class="display-3 text-center">You have no tabs</h1>
+                    <h2 class=" display-1 font-weight-light">Add them in the settings menu</h2>
+                </div>
+            </div>
             <webview-wrapper></webview-wrapper>
         </v-content>
         
@@ -80,5 +86,12 @@
     .favicon{
         max-width:20px !important;
         height:20px;
+    }
+    .no-webviews-wrapper{
+        display: flex;
+        flex: 1;
+        height: 100%;
+        align-items:center;
+        justify-content: center;
     }
 </style>

@@ -5,6 +5,8 @@ const {
 } = require ('vue-cli-plugin-electron-builder/lib')
 
 const isDevelopment = process.env.NODE_ENV !== 'production'
+const path = require('path');
+const autoUpdater = require('electron-updater');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -18,11 +20,11 @@ protocol.registerSchemesAsPrivileged([{scheme: 'app', privileges: { secure: true
 
 function createWindow () {
   // Create the browser window.
-  win = new BrowserWindow({ width: 1500, height: 900, frame: false, webPreferences: {
+  win = new BrowserWindow({ frame: false, webPreferences: {
     nodeIntegration: true,
     webviewTag: true,
   },
-  icon:   './assets/icons/win/app.ico' })
+  icon: path.join(__static, 'icon.png')})
   win.maximize()
 
   if (process.env.WEBPACK_DEV_SERVER_URL) {
@@ -33,6 +35,7 @@ function createWindow () {
     createProtocol('app')
     // Load the index.html when not in development
     win.loadURL('app://./index.html')
+    autoUpdater.checkForUpdatesAndNotify()
   }
 
   win.on('closed', () => {

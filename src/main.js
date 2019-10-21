@@ -24,7 +24,7 @@ export const vuexStore = new Vuex.Store({
       newItem: (state) => {
           const id = uuid();
           const url = 'https://google.pl';
-          const active = false;
+          const active = state.data.length === 0 ? true : false;
           const favicon = `https://www.google.com/s2/favicons?domain=${url}`;
           state.data.push({id, url, active, favicon})
           localStore.set('data', state.data);

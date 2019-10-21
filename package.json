@@ -1,9 +1,11 @@
 {
   "name": "worq",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "private": true,
-  "authors" : ["Łukasz Senator"],
-  "description" : "App to show all your commonly used webapps",
+  "authors": [
+    "Łukasz Senator"
+  ],
+  "description": "App to show all your commonly used webapps",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -11,13 +13,16 @@
     "electron:build": "vue-cli-service electron:build",
     "electron:serve": "vue-cli-service electron:serve",
     "postinstall": "electron-builder install-app-deps",
-    "postuninstall": "electron-builder install-app-deps"
+    "postuninstall": "electron-builder install-app-deps",
+    "electron:generate-icons": "electron-icon-builder --input=./public/icon.png --output=build --flatten"
   },
   "main": "background.js",
   "dependencies": {
     "core-js": "^3.1.2",
     "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^4.1.2",
     "material-design-icons-iconfont": "^5.0.1",
+    "strip-ansi": "^5.2.0",
     "vue": "^2.6.10",
     "vuetify": "^2.1.0"
   },
@@ -27,6 +32,7 @@
     "@vue/cli-service": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "electron": "^6.0.12",
+    "electron-icon-builder": "^1.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "sass": "^1.19.0",

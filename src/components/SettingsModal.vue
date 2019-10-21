@@ -2,7 +2,7 @@
     <div class="text-center">
         <v-dialog
                 v-model="dialog"
-                width="400"
+                width="410"
         >
             <template v-slot:activator="{ on }">
                 <v-btn text icon    v-on="on">
@@ -15,14 +15,12 @@
                         class="headline lighten-2"
                         primary-title
                 >
-                    Settings
+                    <h2 class="display-1 font-weight-light mt-3">Settings</h2>
+                    <h3 class="title font-weight-light grey--text text--darken-1">Add here your commonly used webapps</h3>
                 </v-card-title>
-
-                <v-card-text>
+                <v-card-text class="mt-5">
                     <SitesList></SitesList>
                 </v-card-text>
-
-                <v-divider></v-divider>
 
                 <v-card-actions>
                     <v-btn class="mx-2"
